@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    a
+    <iframe src="http://b.zx1.cn:3000/b.html" frameborder="0" id="farme" onload="load()"></iframe>
+    <script>
+        // 两边都要设置domain 为它们的一级域名
+        // 最新的chrome 好像不需要设置也可以跨域了
+        document.domain = 'zx1.cn';
+        function load() {
+            var farme = document.querySelector('#farme');
+            console.log(farme.contentWindow)
+        }
+    </script>
+</body>
+</html>

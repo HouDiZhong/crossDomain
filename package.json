@@ -1,0 +1,12 @@
+{
+  "name": "crossdom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:HouDiZhong/crossDomain.git",
+  "author": "zx·h <1143413064@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.17.0",
+    "wx": "7.0.0"
+  }
+}
