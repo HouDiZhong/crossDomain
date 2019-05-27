@@ -89,11 +89,9 @@ Linux系统hosts位于 /etc/hosts
 nginx.conf
 和core一样在nginx的配置文件设置header
 http {
-  ###start####
   add_header Access-Control-Allow-Origin *;
   add_header Access-Control-Allow-Headers X-Requested-With;
   add_header Access-Control-Allow-Methods GET,POST,OPTIONS;
-  ###end ###
 }
 ```
 
